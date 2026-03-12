@@ -64,9 +64,6 @@
 [submodule "local/mass_enroll"]
 	path = local/mass_enroll
 	url = https://github.com/rogiervandongen/moodle-local_mass_enroll.git
-[submodule "blocks/accessibility"]
-	path = blocks/accessibility
-	url = https://github.com/hitteshahuja/moodle-block_accessibility.git
 [submodule "blocks/download_certificates"]
 	path = blocks/download_certificates
 	url = https://github.com/manieer/moodle-block_download_certificates.git
@@ -133,3 +130,6 @@
 [submodule "mod/palestra"]
 	path = mod/palestra
 	url = https://github.com/interlegis/moodle-mod_palestra.git
+[submodule "blocks/accessibility"]
+	path = blocks/accessibility
+	url = https://github.com/learningtechnologyservices/moodle-block_accessibility.git
