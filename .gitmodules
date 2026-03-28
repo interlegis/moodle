@@ -130,6 +130,3 @@
 [submodule "mod/palestra"]
 	path = mod/palestra
 	url = https://github.com/interlegis/moodle-mod_palestra.git
-[submodule "blocks/accessibility"]
-	path = blocks/accessibility
-	url = https://github.com/learningtechnologyservices/moodle-block_accessibility.git
