@@ -133,3 +133,6 @@
 [submodule "blocks/accessibility"]
 	path = blocks/accessibility
 	url = https://github.com/interlegis/moodle-block_accessibility.git
+[submodule "mod/choicegroup"]
+	path = mod/choicegroup
+	url = https://github.com/ndunand/moodle-mod_choicegroup.git
