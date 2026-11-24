@@ -21,19 +21,22 @@
  * @copyright  2013 onwards Martin Dougiamas  http://dougiamas.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 namespace core\task;
 
 /**
  * Simple task to run the grade cron.
  */
-class grade_cron_task extends scheduled_task {
+class grade_cron_task extends scheduled_task
+{
 
     /**
      * Get a descriptive name for this task (shown to admins).
      *
      * @return string
      */
-    public function get_name() {
+    public function get_name()
+    {
         return get_string('taskgradecron', 'admin');
     }
 
@@ -41,8 +44,11 @@ class grade_cron_task extends scheduled_task {
      * Do the job.
      * Throw exceptions on errors (the job will be retried).
      */
-    public function execute() {
+    public function execute()
+    {
         global $CFG, $DB;
+
+        require_once($CFG->libdir . '/gradelib.php');
 
         $now = time();
         $sql = "SELECT i.*
@@ -86,5 +92,4 @@ class grade_cron_task extends scheduled_task {
         }
         $rs->close();
     }
-
 }
